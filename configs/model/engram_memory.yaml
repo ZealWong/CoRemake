@@ -1,0 +1,11 @@
+engram:
+  hidden_dim: 768
+  memory_dim: 512
+  num_buckets: 300000
+  max_ngram: 3
+  num_heads_per_ngram: 4
+  conv_kernel_size: 3
+
+index:
+  faiss_nprobe: 32
+  top_k: 100

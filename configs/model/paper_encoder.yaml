@@ -1,0 +1,19 @@
+model:
+  backbone_name: allenai/specter2_base
+  hidden_dim: 768
+  proj_dim: 256
+  use_engram: true
+  memory_dim: 512
+  num_buckets: 300000
+
+engram:
+  max_ngram: 3
+  num_heads_per_ngram: 4
+  conv_kernel_size: 3
+
+train:
+  lr: 2.0e-5
+  batch_size: 16
+  epochs: 5
+  weight_decay: 0.01
+  tau: 0.05

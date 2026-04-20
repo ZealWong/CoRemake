@@ -1,0 +1,10 @@
+model:
+  dim: 256  # should match paper_encoder proj_dim
+  dropout: 0.1
+
+train:
+  lr: 1.0e-4
+  batch_size: 32
+  epochs: 15
+  margin: 1.0
+  weight_decay: 0.01

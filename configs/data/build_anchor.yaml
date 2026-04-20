@@ -1,0 +1,11 @@
+# Anchor dataset construction config
+data:
+  papers_path: data/processed/papers.jsonl
+  citations_path: data/processed/citations.jsonl
+  relation_path: data/processed/relation_weak_labels.jsonl
+  output: data/processed/anchor_train.jsonl
+
+anchor:
+  max_candidates: 50
+  min_citations: 2
+  legacy_year_threshold: 2010

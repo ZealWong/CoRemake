@@ -1,0 +1,15 @@
+# Relation classifier fine-tuning config
+model:
+  input_dim: 256
+  num_labels: 5
+
+train:
+  lr: 1.0e-4
+  batch_size: 64
+  epochs: 20
+  weight_decay: 0.01
+  warmup_steps: 200
+
+data:
+  labels_path: data/processed/relation_weak_labels.jsonl
+  encoder_checkpoint: checkpoints/paper_encoder/best.pt

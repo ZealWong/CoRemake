@@ -1,0 +1,4 @@
+data:
+  pdf_dir: data/raw/pdfs
+  output: data/processed/papers.jsonl
+  domain: null

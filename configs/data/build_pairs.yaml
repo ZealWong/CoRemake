@@ -1,0 +1,17 @@
+# Training pair construction config
+data:
+  papers_path: data/processed/papers.jsonl
+  citations_path: data/processed/citations.jsonl
+  output_dir: data/processed
+
+pairs:
+  num_negatives: 7
+  hard_negative_ratio: 0.5
+  min_year_diff: 0
+  max_year_diff: 30
+
+splits:
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+  seed: 42

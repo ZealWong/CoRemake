@@ -1,0 +1,41 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+env/
+venv/
+
+# Data - raw PDFs and all generated artifacts
+data/raw/pdfs/
+data/raw/test1pdf/
+data/interim/
+data/processed/
+
+# Model artifacts
+*.faiss
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+checkpoints/
+outputs/
+
+# Logs
+wandb/
+runs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Misc
+*.zip

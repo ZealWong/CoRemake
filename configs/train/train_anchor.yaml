@@ -1,0 +1,15 @@
+# Anchor ranker training config
+model:
+  dim: 256
+
+train:
+  lr: 1.0e-4
+  batch_size: 32
+  epochs: 15
+  margin: 1.0
+  weight_decay: 0.01
+  warmup_steps: 100
+
+data:
+  anchor_path: data/processed/anchor_train.jsonl
+  encoder_checkpoint: checkpoints/paper_encoder/best.pt

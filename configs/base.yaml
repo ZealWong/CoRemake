@@ -1,0 +1,21 @@
+# CoRemake base configuration
+# All other configs inherit from this
+
+project:
+  name: coremake
+  version: 0.1.0
+  seed: 42
+
+paths:
+  raw_pdfs: data/raw/pdfs
+  metadata: data/raw/metadata
+  interim: data/interim
+  processed: data/processed
+  checkpoints: checkpoints
+  logs: logs
+
+hardware:
+  num_gpus: 6
+  bf16: true
+  num_workers: 8
+  pin_memory: true
